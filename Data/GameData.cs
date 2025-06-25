@@ -1956,28 +1956,28 @@ namespace TunicVanillaChecklist {
                 "Potion (First) [Shop]",
                 new Check(
                     new Reward(1, "Flask Container", "INVENTORY"),
-                    new Location("Potion (First)", "(-1.9, 1.2, -2.0)", 56, "Shop", "Potion (First)")
+                    new Location("Potion (First)", "(-1.9, 1.2, -2.0)", 56, "Shop", "SV_Shop_Potion (First)")
                 )
             },
             {
                 "Potion (West Garden) [Shop]",
                 new Check(
                     new Reward(1, "Flask Container", "INVENTORY"),
-                    new Location("Potion (West Garden)", "(0.4, 1.2, -2.0)", 56, "Shop", "Potion (West Garden)")
+                    new Location("Potion (West Garden)", "(0.4, 1.2, -2.0)", 56, "Shop", "SV_Shop_Potion (West Garden)")
                 )
             },
             {
                 "Trinket Coin 1 (day) [Shop]",
                 new Check(
                     new Reward(1, "Trinket Coin", "INVENTORY"),
-                    new Location("Trinket Coin 1 (day)", "(0.0, 2.0, -21.5)", 56, "Shop", "Trinket Coin 1 (day)")
+                    new Location("Trinket Coin 1 (day)", "(0.0, 2.0, -21.5)", 56, "Shop", "SV_Shop_TrinketCoin (First)")
                 )
             },
             {
                 "Trinket Coin 2 (night) [Shop]",
                 new Check(
                     new Reward(1, "Trinket Coin", "INVENTORY"),
-                    new Location("Trinket Coin 2 (night)", "(0.0, 2.0, -21.5)", 56, "Shop", "Trinket Coin 2 (night)")
+                    new Location("Trinket Coin 2 (night)", "(0.0, 2.0, -21.5)", 56, "Shop", "SV_Shop_TrinketCoin (Second)")
                 )
             },
             {
