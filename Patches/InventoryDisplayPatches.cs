@@ -182,6 +182,7 @@ namespace TunicVanillaChecklist {
     public class InventoryDisplayPatches {
 
         public static bool Loaded = false;
+        public static GameObject Stats;
         public static GameObject Title;
         public static GameObject Pages;
         public static GameObject Fairies;
@@ -213,7 +214,7 @@ namespace TunicVanillaChecklist {
             if (!Loaded) {
                 TMP_FontAsset FontAsset = Resources.FindObjectsOfTypeAll<TMP_FontAsset>().Where(Font => Font.name == "Latin Rounded").ToList()[0];
                 Material FontMaterial = Resources.FindObjectsOfTypeAll<Material>().Where(Material => Material.name == "Latin Rounded - Quantity Outline").ToList()[0];
-                GameObject Stats = new GameObject("game stats");
+                Stats = new GameObject("game stats");
                 Stats.transform.parent = GameObject.Find("_GameGUI(Clone)/HUD Canvas/Scaler/Inventory/Inventory Subscreen/").transform;
 
                 GameObject Backing = new GameObject("backing");
@@ -331,6 +332,7 @@ namespace TunicVanillaChecklist {
                 TunicLogger.LogError(e + " " + e.Message);
             }
 
+            Stats.SetActive(InventoryDisplay.InventoryOpen);
             return true;
         }
     }
